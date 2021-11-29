@@ -11,4 +11,4 @@
  
  加微信群交流，公众号【FiboAI】后台回复「**加群**」即可。
  
-                           ![|]image/WechatIMG2355.jpeg
+                         ![|](image/WechatIMG2355.jpeg）
