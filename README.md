@@ -14,7 +14,10 @@
 
 EngineX决策引擎系统核心概念有：指标、规则、决策节点、决策流、决策引擎。它们的组成关系如下： 
 
-  组成关系
+                       
+  ![|](https://github.com/FiboAI/EngineX/blob/master/image/relation.png)
+  
+  
         
 ### 1 指标
 
