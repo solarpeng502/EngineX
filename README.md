@@ -8,3 +8,4 @@
 
  Engine X 提供了三个版本：开源版本、商用基础版本、商用高级版本，点击https://www.fibo.cn/了解更多关于 Engine X商用版本更多信息。
  加微信群交流，公众号【FiboAI】后台回复「**加群**」即可。
+         ![|](https://github.com/FiboAI/EngineX/blob/master/image/WechatIMG2355.jpeg)
