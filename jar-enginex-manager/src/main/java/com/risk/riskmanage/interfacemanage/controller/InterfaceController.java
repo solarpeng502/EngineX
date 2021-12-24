@@ -91,7 +91,7 @@ public class InterfaceController {
 
     //添加接口
     @PostMapping("addInterface")
-    @ArchivesLog(operationType = OpTypeConst.ADD_INTERFACE)
+//    @ArchivesLog(operationType = OpTypeConst.ADD_INTERFACE)
     public ResponseEntityDto<InterfaceVo> addInterface(@RequestBody InterfaceVo interfaceVo ) {
         InterfaceVo insert = interfaceService.inserInterfaceInfo(interfaceVo);
         ResponseEntityDto<InterfaceVo> ruleResponseEntityDto = ResponseEntityBuilder.buildNormalResponse(insert);
@@ -100,7 +100,7 @@ public class InterfaceController {
 
     //删除接口
     @PostMapping("deleteInterface")
-    @ArchivesLog(operationType = OpTypeConst.DELETE_INTERFACE)
+//    @ArchivesLog(operationType = OpTypeConst.DELETE_INTERFACE)
     public ResponseEntityDto<Boolean> deleteInterface(@RequestBody InterfaceVo interfaceVo ) {
         Boolean bool = interfaceService.deleteInterfaceInfo(interfaceVo);
         ResponseEntityDto<Boolean> ruleResponseEntityDto = ResponseEntityBuilder.buildNormalResponse(bool);
@@ -109,7 +109,7 @@ public class InterfaceController {
 
     //编辑接口
     @PostMapping("updateInterface")
-    @ArchivesLog(operationType = OpTypeConst.UPDATE_INTERFACE)
+//    @ArchivesLog(operationType = OpTypeConst.UPDATE_INTERFACE)
     public ResponseEntityDto<InterfaceVo> updateInterface(@RequestBody InterfaceVo interfaceVo ) {
         InterfaceVo insert = interfaceService.updateInterfaceInfo(interfaceVo);
         ResponseEntityDto<InterfaceVo> ruleResponseEntityDto = ResponseEntityBuilder.buildNormalResponse(insert);
@@ -118,7 +118,7 @@ public class InterfaceController {
 
     //批量更新接口状态
     @PostMapping("updateInterfaceStatus")
-    @ArchivesLog(operationType = OpTypeConst.UPDATE_INTERFACE_STATUS)
+//    @ArchivesLog(operationType = OpTypeConst.UPDATE_INTERFACE_STATUS)
     public ResponseEntityDto updateStatus(@RequestBody InterfaceUpdateStatusParam param) {
         Long[] ids = param.getIds();
         Integer status = param.getStatus();

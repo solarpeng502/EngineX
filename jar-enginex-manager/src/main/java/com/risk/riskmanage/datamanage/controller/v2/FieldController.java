@@ -858,7 +858,7 @@ public class FieldController extends BaseController {
     }
 
     @PostMapping(value = "/updateFieldFolder")
-    @ArchivesLog(operationType = OpTypeConst.UPDATE_FIELD_FOLDER)
+//    @ArchivesLog(operationType = OpTypeConst.UPDATE_FIELD_FOLDER)
     public ResponseEntityDto<Object> updateFieldFolder(@RequestBody UpdateFolderParam param){
         UpdateFolderParam.checkNotNull(param);
         int result = s.fieldService.updateFieldFolder(param);

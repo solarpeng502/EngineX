@@ -38,7 +38,7 @@ public class RuleVersionController {
      * @return
      */
     @PostMapping("/addRuleVersion")
-    @ArchivesLog(operationType = OpTypeConst.SAVE_RULE_VERSION)
+//    @ArchivesLog(operationType = OpTypeConst.SAVE_RULE_VERSION)
     public ResponseEntityDto addRuleVersion(@RequestBody  RuleVersionVo version){
         boolean b = versionService.addVersion(version);
         if (!b){
@@ -54,7 +54,7 @@ public class RuleVersionController {
      * @return
      */
     @PostMapping("/copyRuleVersion")
-    @ArchivesLog(operationType = OpTypeConst.COPY_RULE_VERSION)
+//    @ArchivesLog(operationType = OpTypeConst.COPY_RULE_VERSION)
     public ResponseEntityDto copyRuleVersion(@RequestBody  RuleVersionVo version){
         boolean b = versionService.copyVersion(version);
         List< RuleVersionVo> ruleVersionList = versionService.queryVersionListByRuleId(version.getRuleId());
@@ -67,7 +67,7 @@ public class RuleVersionController {
      * @return
      */
     @PostMapping("/updateRuleVersion")
-    @ArchivesLog(operationType = OpTypeConst.UPDATE_RULE_VERSION)
+//    @ArchivesLog(operationType = OpTypeConst.UPDATE_RULE_VERSION)
     public ResponseEntityDto updateRuleVersion(@RequestBody RuleVersionVo version){
         boolean b = versionService.updateVersion(version);
         List<RuleVersionVo> ruleVersionList = versionService.queryVersionListByRuleId(version.getRuleId());
@@ -80,7 +80,7 @@ public class RuleVersionController {
      * @return
      */
     @RequestMapping(value = "/updateRuleVersionStatus", method = RequestMethod.POST)
-    @ArchivesLog(operationType = OpTypeConst.UPDATE_RULE_VERSION_STATUS)
+//    @ArchivesLog(operationType = OpTypeConst.UPDATE_RULE_VERSION_STATUS)
     public ResponseEntityDto<Object> updateStatus(@RequestBody StatusParam statusParam) {
         versionService.updateStatus(statusParam);
         List<RuleVersionVo> ruleVersionList = versionService.queryVersionListByRuleId(statusParam.getTacticsId());

@@ -233,7 +233,7 @@ public class RuleInfoController {
     // 查询简单规则
     @ResponseBody
     @RequestMapping(value = "getSimpleRule/{id}", method = RequestMethod.POST)
-    @ArchivesLog(operationType = OpTypeConst.SELECT_SAMPLE_RULE)
+//    @ArchivesLog(operationType = OpTypeConst.SELECT_SAMPLE_RULE)
     public ResponseEntityDto<RuleVo> getSimpleRule(@PathVariable Long id) {
         if (id == null) {
             throw new ApiException(ErrorCodeEnum.PARAMS_EXCEPTION.getCode(), ErrorCodeEnum.PARAMS_EXCEPTION.getMessage());

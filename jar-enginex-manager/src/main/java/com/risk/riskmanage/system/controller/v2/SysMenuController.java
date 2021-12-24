@@ -161,7 +161,7 @@ public class SysMenuController extends CcpBaseController {
 	 * {"status":"1","error":"00000000","msg":null,"data":1}
 	 */
 	@RequestMapping(value = "updateStatus", method = RequestMethod.POST)
-	@ArchivesLog(operationType = OpTypeConst.UPDATE_SYS_MENU_STATUS)
+//	@ArchivesLog(operationType = OpTypeConst.UPDATE_SYS_MENU_STATUS)
 	public ResponseEntityDto updateStatus(@RequestBody Map<String, Object> param) {
 		int status = (Integer) param.get("status");
 		String ids = (String)param.get("ids");

@@ -18,8 +18,6 @@ import javax.annotation.Resource;
 public class ServiceFactory {
 
 	
-
-	
 	/**
 	 * 后台用户管理Service.
 	 */

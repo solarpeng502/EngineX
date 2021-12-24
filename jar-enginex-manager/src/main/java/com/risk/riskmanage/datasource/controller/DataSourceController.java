@@ -24,14 +24,14 @@ public class DataSourceController {
     DataSourceService dataSourceService;
 
     @RequestMapping(value = "save", method = RequestMethod.POST)
-    @ArchivesLog(operationType = OpTypeConst.DATA_SOURCE_SAVE)
+//    @ArchivesLog(operationType = OpTypeConst.DATA_SOURCE_SAVE)
     public ResponseEntityDto<Object> save(@RequestBody DataSourceVo dataSourceVo) {
         Integer result = dataSourceService.saveDataSource(dataSourceVo);
         return ResponseEntityBuilder.buildNormalResponse(result);
     }
 
     @RequestMapping(value = "update", method = RequestMethod.POST)
-    @ArchivesLog(operationType = OpTypeConst.DATA_SOURCE_MODIFY)
+//    @ArchivesLog(operationType = OpTypeConst.DATA_SOURCE_MODIFY)
     public ResponseEntityDto<Object> update(@RequestBody DataSourceVo dataSourceVo) {
         Integer result = dataSourceService.updateDataSource(dataSourceVo);
         return ResponseEntityBuilder.buildNormalResponse(result);
@@ -50,7 +50,7 @@ public class DataSourceController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    @ArchivesLog(operationType = OpTypeConst.DATA_SOURCE_DELETE)
+//    @ArchivesLog(operationType = OpTypeConst.DATA_SOURCE_DELETE)
     public ResponseEntityDto<Object> deleteDataSourceById(@PathVariable Integer id) {
         Integer result = dataSourceService.deleteDataSourceById(id);
         return ResponseEntityBuilder.buildNormalResponse(result);

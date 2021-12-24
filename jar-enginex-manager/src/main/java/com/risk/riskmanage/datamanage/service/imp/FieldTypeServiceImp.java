@@ -1,7 +1,6 @@
 package com.risk.riskmanage.datamanage.service.imp;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -17,8 +16,7 @@ import com.risk.riskmanage.datamanage.service.FieldTypeService;
 import javax.annotation.Resource;
 
 @Service
-public class FieldTypeServiceImp extends BaseService implements
-		FieldTypeService {
+public class FieldTypeServiceImp extends BaseService implements FieldTypeService {
 	@Resource
 
 	@Override
